@@ -1,0 +1,70 @@
+.calendar {
+  margin-top: 30px;
+}
+
+.calendarHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.calendarTitle {
+  margin: 0;
+  flex: 1;
+  text-align: center;
+}
+
+.navBtn,
+.todayBtn {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  background: #e6f7ff;
+  transition: 0.3s;
+}
+
+.navBtn:hover,
+.todayBtn:hover {
+  background: #b3e5fc;
+}
+
+.todayBtn {
+  margin-left: 10px;
+  background: #4fc3f7;
+  color: white;
+}
+
+.calendarGrid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 6px;
+  margin-top: 10px;
+}
+
+.calendarDay {
+  height: 70px;
+  border-radius: 8px;
+  padding: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 12px;
+  background: #e6f7ff;
+  transition: 0.3s;
+}
+
+.calendarDay:hover {
+  transform: scale(1.05);
+}
+
+.dayNumber {
+  font-weight: bold;
+}
+
+.percent {
+  align-self: flex-end;
+  font-size: 11px;
+}

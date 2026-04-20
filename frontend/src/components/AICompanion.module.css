@@ -1,0 +1,76 @@
+.companion {
+  margin-top: 20px;
+  border: 2px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 15px;
+  background-color: white;
+}
+
+.title {
+  margin: 0 0 10px 0;
+}
+
+.chatBox {
+  max-height: 300px;
+  overflow-y: auto;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+.messageRow {
+  margin: 8px 0;
+}
+
+.message {
+  display: inline-block;
+  padding: 8px 12px;
+  border-radius: 12px;
+  max-width: 80%;
+  word-wrap: break-word;
+}
+
+.userMessage {
+  background: #d1e7ff;
+  margin-left: auto;
+}
+
+.aiMessage {
+  background: #f0f0f0;
+}
+
+.thinking {
+  display: inline-block;
+  padding: 8px 12px;
+  border-radius: 12px;
+  background: #f0f0f0;
+}
+
+.form {
+  display: flex;
+  gap: 5px;
+}
+
+.input {
+  flex: 1;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.sendButton {
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  transition: opacity 0.2s ease;
+}
+
+.sendButton:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}

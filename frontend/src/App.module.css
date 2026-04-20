@@ -1,0 +1,33 @@
+.app {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.authRow {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.button {
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  border: none;
+  background: #4fc3f7;
+  color: white;
+}
