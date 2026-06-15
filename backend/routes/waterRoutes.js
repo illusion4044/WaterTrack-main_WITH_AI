@@ -32,14 +32,14 @@ router.post('/advice', auth, async (req, res) => {
     const WaterEntry = require('../models/WaterEntry');
     const entries = await WaterEntry.find({ user: req.user._id }).sort({ date: -1 });
     
-    // Групуємо по датах
+    // Групування по датах
     const grouped = entries.reduce((acc, entry) => {
       const date = new Date(entry.date).toISOString().split('T')[0];
       acc[date] = (acc[date] || 0) + entry.amount;
       return acc;
     }, {});
     
-    // Отримуємо сьогоднішню та вчорашню дати
+    // Отримуємо сьогоднішні та минулі дати
     const today = new Date().toISOString().split('T')[0];
     const yesterday = new Date(Date.now() - 24 * 60 * 60 * 1000).toISOString().split('T')[0];
     

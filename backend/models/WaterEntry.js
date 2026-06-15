@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const waterEntrySchema = new mongoose.Schema({
   user: { type: mongoose.Schema.Types.ObjectId, ref: 'User', required: true },
-  amount: { type: Number, required: true }, // ml
+  amount: { type: Number, required: true }, 
   date: { type: Date, default: Date.now }
 }, { timestamps: true });
 
