@@ -62,7 +62,7 @@ router.post('/advice', auth, async (req, res) => {
                          'липня', 'серпня', 'вересня', 'жовтня', 'листопада', 'грудня'];
       return `${monthNames[parseInt(monthNum) - 1]} ${year}: ${data.total} мл (${data.days.size} днів)`;
     }).join(', ');
-    
+    // Формування об'єкта для AI
     waterData = {
       today: grouped[today] || 0,
       yesterday: grouped[yesterday] || 0,
